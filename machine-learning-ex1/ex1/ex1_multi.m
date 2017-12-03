@@ -82,8 +82,8 @@ X = [ones(m, 1) X];
 fprintf('Running gradient descent ...\n');
 
 % Choose some alpha value
-alpha = 0.01;
-num_iters = 400;
+alpha = 0.05;
+num_iters = 100;
 
 % Init Theta and Run Gradient Descent 
 theta = zeros(3, 1);
@@ -104,7 +104,9 @@ fprintf('\n');
 % ====================== YOUR CODE HERE ======================
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
-price = 0; % You should change this
+predict_mat = [1650 3];
+predict_mat = featureNormalize(predict_mat);
+price = [1 predict_mat] * theta; % You should change this
 
 
 % ============================================================
