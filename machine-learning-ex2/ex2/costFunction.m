@@ -31,7 +31,13 @@ for i = 1 : m
     grad = grad + (H(i)-y(i)) * X(i,:)';
 end
 
-grad = 1/m*grad;
+%  ANOTHRER WAY:
+%  n = length(theta);
+%  for j = 1 : n
+%      grad(j) = sum((H - y) .* X(:, j)) / m;
+%  end
+
+grad = 1/m * grad;
 
 % =============================================================
 
