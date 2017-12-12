@@ -51,7 +51,7 @@ pause;
 
 %% ============ Part 2: Compute Cost and Gradient ============
 %  In this part of the exercise, you will implement the cost and gradient
-%  for logistic regression. You neeed to complete the code in 
+%  for logistic regression. You needed to complete the code in 
 %  costFunction.m
 
 %  Setup the data matrix appropriately, and add ones for the intercept term
