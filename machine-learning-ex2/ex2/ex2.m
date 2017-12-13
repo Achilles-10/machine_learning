@@ -91,7 +91,7 @@ pause;
 %  optimal parameters theta.
 
 %  Set options for fminunc
-options = optimset('GradObj', 'on', 'MaxIter', 400);
+options = optimset('GradObj', 'on', 'MaxIter', 400,'Algorithm','trust-region');
 
 %  Run fminunc to obtain the optimal theta
 %  This function will return theta and the cost 
