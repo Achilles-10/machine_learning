@@ -19,7 +19,7 @@ grad = zeros(size(theta));
 
 H = sigmoid(X * theta);
 T1 = sum((-y).*log(H)-(1-y).*log(1-H));
-T2 = sum(theta.^2);
+T2 = sum(theta.^2) - theta(1) ^ 2;
 J = T1 ./ m + lambda / (2*m) * T2;
 
 % ====================Compute grad==================
