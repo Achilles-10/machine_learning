@@ -41,3 +41,19 @@ We should adjust our parameter $\alpha$ to ensure that the gradient descent algo
 * **Fixed Step Size($\alpha$)**
 
 ![Fixed Step Size](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl/pl_5.png)
+
+## Gradient Descent for Linear Regression
+
+* **Algorithm**
+$$ 
+\begin{aligned}
+    &{\rm repeat\;until\;convergence}:\\&\theta_0\;:=\theta_0-\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x_i)-y_i)\\&\theta_1\;:=\theta_1-\alpha\frac{1}{m}\sum_{i=1}^{m}((h_\theta(x_i)-y_i)x_i)
+\end{aligned}
+$$
+
+* **Batch Gradient Descent**:
+This method looks at `every example` in the entire training set on every step
+
+Here is an example of gradient descent as it is run to minimize a quadratic function:
+
+![example](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl/pl_6.png)
