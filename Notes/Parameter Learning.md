@@ -3,7 +3,7 @@
 ## **Gradient Descent**
 
 * **Illustration**:
-![Gradient Descent](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl_1.png)
+![Gradient Descent](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl/pl_1.png)
 
 Each time when we take a step, $J(\theta_0,\theta_1)$ would heads toward to its minimum value(sometimes local minimum).
 
@@ -16,7 +16,7 @@ $$
 
 At each iteration, we should simultaneously update the parameters.
 
-![Update](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl_2.png)
+![Update](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl/pl_2.png)
 
 ## Gradient Descent Intuition
 
@@ -28,7 +28,7 @@ $$
     &{\rm repeat\;until\;convergence}:\\&\theta_1\;:=\theta_1-\alpha\frac{d}{d\theta_1}J(\theta_1)
 \end{aligned}
 $$
-![Convergence](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl_3.png)
+![Convergence](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl/pl_3.png)
 
 Regardless of the slope's sign for $\frac{d}{d\theta_1}J(\theta_1),\theta_1$ eventually converges to its minimum value.
 
@@ -36,8 +36,8 @@ Regardless of the slope's sign for $\frac{d}{d\theta_1}J(\theta_1),\theta_1$ eve
 
 We should adjust our parameter $\alpha$ to ensure that the gradient descent algorithm converges in a reasonable time.
 
-![Learning Rate](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl_4.png)
+![Learning Rate](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl/pl_4.png)
 
 * **Fixed Step Size($\alpha$)**
 
-![Fixed Step Size](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl_5.png)
+![Fixed Step Size](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/pl/pl_5.png)

@@ -11,7 +11,7 @@ $$ \begin{cases}
 \end{cases} $$
 
 * $Learning\;Process:$
-![process](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf_1.png)
+![process](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf/macf_1.png)
 h is a function called `hypothesis`.
 $$ h_{\theta}(x_i)=\theta_0+\theta_1\cdot x $$
 
@@ -24,18 +24,18 @@ $$ \rm {minimize}_{\theta_0,\theta_1}\ J(\theta_0,\theta_1) $$
 This function is also called "Squared error function" or "Mean squared error". The mean if `halved` $(\frac{1}{2})$ as a convenience.
 
 The following image summarizes what the cost function dose:
-![cost function](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf_2.png)
+![cost function](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf/macf_2.png)
 
 ## Cost Function Intuition
 
-![$J(\theta_1)$](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf_3.png)
+![$J(\theta_1)$](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf/macf_3.png)
 
 * **Contour Plot**
 
 all points of the same line has a constant value
 
-![Contour Plot](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf_4.png)
+![Contour Plot](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf/macf_4.png)
 
 The point in the center of the inner most 'circle' is our Goal
 
-![Contour Plot](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf_5.png)
+![Contour Plot](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/macf/macf_5.png)
