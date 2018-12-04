@@ -14,7 +14,7 @@ Now we can guarantee that $J(\theta$ is convex for logistic regression
 * **Plot:**
   ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/car/car_2.png)
 
-  ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/car/car_2.png)
+  ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/car/car_3.png)
 
   $$ \begin{aligned}
       &{\rm Cost}(h_\theta(x),y)=0\;&{\rm if\;}h_\theta(x)=y\\
