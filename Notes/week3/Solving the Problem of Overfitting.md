@@ -19,3 +19,39 @@
    * Keep all the features, but reduce the magnitude of parameters $\theta_j$
    * Regularization works well when we have a lot of slightly useful features
 
+## **Cost Function**
+
+* **Idea:** `Reduce some features weight`
+
+* **Function:**
+  $$ {\rm min}_\theta\frac{1}{2m}\sum_{i=1}^{m}(h\theta(x^{(i)})-y^{(i)})^2+\lambda\sum_{j=1}^n\theta_j^2 $$
+
+  The $\lambda$, or lambda, is the `regularization parameter`. It determines how much the costs of out theta parameters are inflated.
+
+## **Reugularized Linear Regression**
+
+* **`Gradient Descent:`**
+  $$ \begin{aligned}
+     &{\rm Repeat\{}\\
+     &\theta_0:=\theta_0-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_0^{(i)}\\
+     &\theta_j:=\theta_j-\alpha[(\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x^{(i)})+\frac{\lambda}{m}\theta_j]\quad j\in\{1,2\dots n\}\\
+     &\}
+  \end{aligned} $$
+
+  $\theta_j$ can also be represented as:
+  $$ \theta_j:=\theta_j(1-\alpha\frac{\lambda}{m})-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)} $$
+
+  1-$\alpha\frac{\lambda}{m}$ will always be less than 1.
+
+* **`Normal Equation`**
+  $$ \begin{aligned}
+     &\theta=(X^TX+\lambda\cdot L)^{-1}X^Ty\\
+     &{\rm where}\;L=\begin{bmatrix}
+        0 & \\
+          & 1 & \\
+          &   & 1 \\
+          &   &   & \ddots &\\
+          &   &   &   & 1
+     \end{bmatrix}
+  \end{aligned} $$
+  Now $X^T+\lambda\cdot L$ becomes invertible
