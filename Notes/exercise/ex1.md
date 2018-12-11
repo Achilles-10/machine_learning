@@ -23,6 +23,7 @@ theta -= (alpha / m) * np.sum(X * error[:, np.newaxis], 0)
 ```
 
 `.flatten()`:变为1维向量
+
 `error[:,np.newaxis]`:
 >the `newaxis` is used to increase the dimension of the existing array by one more dimension
 ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/ex/ex_1.png)
