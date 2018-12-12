@@ -98,3 +98,28 @@ array([[1, 4],
        [3, 4],
        [5, 6]])
 ```
+
+## **ex3**
+
+* `np.roll(a,shift,axis=None)`,将a沿着axis的方向滚动shift长度
+  ```python
+  a = np.arange(10)
+  b = np.roll(a,3,axis=0)
+  print('a:',a)
+  print('b:',b,'\n')
+  ```
+  输出：![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/ex/ex_2.png)
+
+* `np.vstack(tup)`,沿垂直方向把矩阵堆叠起来
+  ```python
+  arr1 = np.array([1, 2, 3])
+  arr2 = np.array([4, 5, 6])
+  res = np.vstack((arr1, arr2))
+  ```
+  输出：
+  ```python
+  array([[1, 2, 3],
+       [4, 5, 6]])
+  ```
+
+* `np.argmax(a, axis=None, out=None)`,返回沿axis轴最大值的索引
