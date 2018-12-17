@@ -1,13 +1,14 @@
-# **Solving the Problem of Overfitting **
+
+
+# Solving the Problem of Overfitting **
 
 ## **The Overfitting Problem**
 
 * 
   1. **`underfitting`:** high bias, function is too simple, uses too few features
-  ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/spo/spo_1.png)
-
+    ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/spo/spo_1.png)
   2. **`overfitting`:** complicated function, fits the available data but does not generalize well to predict new data.
-   ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/spo/spo_2.png)
+      ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/spo/spo_2.png)
 
 
 * Two main option to address the issue of overfitting:
@@ -47,11 +48,11 @@
   $$ \begin{aligned}
      &\theta=(X^TX+\lambda\cdot L)^{-1}X^Ty\\
      &{\rm where}\;L=\begin{bmatrix}
-        0 & \\
-          & 1 & \\
-          &   & 1 \\
-          &   &   & \ddots &\\
-          &   &   &   & 1
+  ​      0 & \\
+  ​        & 1 & \\
+  ​        &   & 1 \\
+  ​        &   &   & \ddots &\\
+  ​        &   &   &   & 1
      \end{bmatrix}
   \end{aligned} $$
   Now $X^T+\lambda\cdot L$ becomes invertible
