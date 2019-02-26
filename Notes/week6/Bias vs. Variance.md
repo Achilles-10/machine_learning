@@ -14,3 +14,21 @@ In order to choose the model and regularization term $\lambda$, we need to:
 4. Compute the cross validation error using the learned $\Theta$(computed with $\lambda$) on the $J_{CV}(\Theta)$ `without` regularization or $\lambda=0$
 5. Select the best combo that produces the lowest error on the cross validation set.
 6. Using the best combo $\Theta\;and\;\lambda$, apply it on $J_{test}(\Theta)$ to see if has a good generalization of the problem.
+
+## Learning Curves
+
+* High bias ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/bvv/bvv_3.png)
+* High variance ![](https://raw.githubusercontent.com/Achilles-10/machine_learning/master/Notes/imgs/bvv/bvv_4.png)
+
+## Deciding What to Do Next Revisited
+
+* **`Getting more training examples:`** Fixes high variance
+* **`Trying smaller sets of features:`** Fixes high variance
+* **`Adding features:`** Fixes high bias
+* **`Adding polynomial features:`** Fixes high bias
+* **`Decreasing λ:`** Fixes high bias
+* **`Increasing λ:`** Fixes high variance. 
+
+> **`Diagnosing Neutral Networks`**
+> * **`fewer parameters and hidden layers:`** prone to underfitting and also computationally cheaper
+> * **`more parameters and hidden layers:`** prone to overfitting and also computationally expensive (*can use $\lambda$ to address the overfitting*)
